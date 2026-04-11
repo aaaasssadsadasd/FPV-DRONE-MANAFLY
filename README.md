@@ -1,5 +1,5 @@
 # FPV-DRONE-MANAFLY
-3" drone project based on 3d printed chasis by manafly
+3" drone project based on 3d printed chasis by manafly. Modern drone chassis are usually always made from carbon fiber, it is light and durable. Using ai generative design, this drone frame is optimized for weight and strength. It's design allows it to perform competitively with carbon fiber frames while being printed from PETG or ABS filament. Each frame costs around $1 in filament. This is the foundation for my project, however the frame is the cheapest part of it all.
 # BOM
 ```markdown id="fpv92k"
 | Name                                      | Purpose             | Quantity | Total Cost (USD) | Link                                                                                                                                     | Distributor     |
