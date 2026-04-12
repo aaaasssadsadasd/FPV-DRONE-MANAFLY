@@ -1,0 +1,236 @@
+# ============================================================
+# Betaflight Configuration - SpeedyBee F405 AIO
+# Motors: Happymodel EX1404 1404 KV4800
+# Betaflight Version: 4.5.x
+# Generated: 2026-04-11
+# ============================================================
+# HOW TO USE:
+#   1. Flash SPEEDYBEEF405AIO target in Betaflight Configurator
+#   2. Open CLI tab
+#   3. Paste this entire file, press Enter
+#   4. Type 'save' and press Enter
+#   5. FC will reboot — calibrate ESCs and accelerometer after
+# ============================================================
+
+# ----- BOARD TARGET -----
+board_name SPEEDYBEEF405AIO
+manufacturer_id SPBE
+
+# ----- FEATURE FLAGS -----
+feature -RX_PARALLEL_PWM
+feature -RX_MSP
+feature -TELEMETRY
+feature -RSSI_ADC
+feature -LED_STRIP
+feature MOTOR_STOP
+feature RX_SERIAL
+feature SOFTSERIAL
+feature OSD
+
+# ----- ESC / MOTOR PROTOCOL -----
+# SpeedyBee F405 AIO has built-in 35A BLHeli_32 ESC
+# Use DSHOT600 for best performance with 4800KV motors
+set motor_pwm_protocol = DSHOT600
+set dshot_idle_value = 550
+set motor_poles = 12
+# EX1404 is typically 12N14P → 12 poles
+set use_unsynced_pwm = OFF
+set digital_idle_percent = 5.5
+
+# ----- MOTOR ORDER (standard Betaflight X quad) -----
+# Motor 1: Rear Right  (CW)
+# Motor 2: Front Right (CCW)
+# Motor 3: Rear Left   (CCW)
+# Motor 4: Front Left  (CW)
+# Verify spin directions match your prop orientation!
+
+# ----- PID PROFILE (Profile 1) -----
+profile 0
+
+set p_pitch = 48
+set i_pitch = 85
+set d_pitch = 40
+set f_pitch = 90
+
+set p_roll = 45
+set i_roll = 80
+set d_roll = 38
+set f_roll = 90
+
+set p_yaw = 45
+set i_yaw = 90
+set d_yaw = 0
+set f_yaw = 80
+
+# D-term filter — suitable for a lightweight 3" build
+set dterm_lowpass_hz = 100
+set dterm_lowpass2_hz = 200
+set dterm_notch_hz = 0
+set dterm_notch_cutoff = 0
+
+# Throttle PID attenuation (TPA) — reduce P/D at high throttle
+set tpa_rate = 65
+set tpa_breakpoint = 1600
+set tpa_mode = D
+
+# Anti-gravity — helps with fast throttle punches
+set anti_gravity_gain = 8000
+
+# I-term relax — reduces bounce-back on fast rolls/flips
+set iterm_relax = RP
+set iterm_relax_type = SETPOINT
+set iterm_relax_cutoff = 15
+
+# ----- RATES PROFILE (Profile 1) -----
+rateprofile 0
+
+set roll_rc_rate = 105
+set pitch_rc_rate = 105
+set yaw_rc_rate = 100
+
+set roll_expo = 15
+set pitch_expo = 15
+set yaw_expo = 10
+
+set roll_srate = 70
+set pitch_srate = 70
+set yaw_srate = 40
+
+# ----- FILTERS -----
+# RPM filtering (requires DSHOT + BLHeli_32 bidirectional)
+set dshot_bidir = ON
+set rpm_filter_harmonics = 3
+set rpm_filter_min_hz = 100
+
+# Gyro lowpass
+set gyro_lowpass_hz = 200
+set gyro_lowpass2_hz = 300
+set gyro_lowpass_type = BIQUAD
+set gyro_lowpass2_type = PT1
+
+# Gyro notch filters (can disable if using RPM filter)
+set gyro_notch1_hz = 0
+set gyro_notch2_hz = 0
+
+# Dynamic notch filter
+set dyn_notch_count = 3
+set dyn_notch_q = 300
+set dyn_notch_min_hz = 100
+set dyn_notch_max_hz = 600
+
+# ----- ACCELEROMETER / BLACKBOX -----
+set acc_calibration = 0,0,0,0
+set acc_hardware = AUTO
+set mag_hardware = NONE
+set baro_hardware = NONE
+
+# Blackbox — log to onboard flash if available
+set blackbox_device = SPIFLASH
+set blackbox_rate_denom = 2
+set blackbox_mode = NORMAL
+
+# ----- RECEIVER -----
+# Adjust serial port to match your RX wiring
+# Example: ELRS on UART2, CRSF protocol
+set serialrx_provider = CRSF
+set serialrx_inverted = OFF
+set serialrx_halfduplex = OFF
+
+serial 1 64 115200 57600 0 115200
+# ↑ UART2 = ELRS/CRSF RX — change port number if wired differently
+
+# ----- OSD -----
+# Basic OSD layout for the built-in AT7456E chip
+set osd_units = METRIC
+set osd_rssi_alarm = 25
+set osd_cap_alarm = 1200
+set osd_tim1 = 2560
+set osd_tim2 = 2561
+set osd_vbat_pos = 2422
+set osd_rssi_pos = 2456
+set osd_tim_2_pos = 2489
+set osd_flymode_pos = 2425
+set osd_throttle_pos = 2458
+set osd_vtx_channel_pos = 2498
+set osd_current_pos = 2390
+set osd_mah_drawn_pos = 2391
+set osd_craft_name_pos = 2058
+set osd_gps_speed_pos = 2369
+set osd_gps_sats_pos = 2401
+set osd_home_dir_pos = 2338
+set osd_home_dist_pos = 2370
+set osd_compass_bar_pos = 2274
+set osd_altitude_pos = 2339
+
+# ----- VOLTAGE / CURRENT SENSING -----
+# SpeedyBee F405 AIO: onboard current sensor
+set ibata_scale = 400
+set vbat_scale = 110
+set vbat_min_cellvoltage = 330
+set vbat_max_cellvoltage = 420
+set vbat_warning_cellvoltage = 350
+set vbat_hysteresis = 1
+set current_meter = ADC
+set battery_meter = ADC
+set bat_capacity = 0
+
+# Typical for 3S or 4S — set capacity in mAh if known
+# e.g. set bat_capacity = 650  (for 650mAh 4S)
+
+# ----- FAILSAFE -----
+set failsafe_delay = 4
+set failsafe_recovery_delay = 20
+set failsafe_off_delay = 200
+set failsafe_throttle = 1000
+set failsafe_kill_switch = OFF
+set failsafe_throttle_low_delay = 100
+set failsafe_procedure = DROP
+
+# ----- BEEPER -----
+set beeper_dshot_beacon_tone = 3
+beeper -RX_LOST
+beeper -RX_LOST_LANDING
+beeper ARMING_GPS_FIX
+beeper BAT_CRIT_LOW
+beeper BAT_LOW
+beeper DISARMING
+
+# ----- ARMING / MODES -----
+# Suggested channel map: AETR1234 (common for ELRS)
+set default_rate_profile = 0
+set small_angle = 180
+
+# AUX channel mode assignments (customize to your TX)
+# AUX1 (CH5): ARM
+# AUX2 (CH6): ANGLE / ACRO toggle
+# AUX3 (CH7): BEEPER
+# AUX4 (CH8): TURTLE MODE
+
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 900 1300 0 0
+aux 2 13 2 1700 2100 0 0
+aux 3 35 3 1700 2100 0 0
+
+# ----- VTX (if applicable) -----
+# Uncomment and adjust if using SmartAudio / Tramp VTX
+# set vtx_band = 5
+# set vtx_channel = 8
+# set vtx_power = 1
+# set vtx_low_power_disarm = ON
+
+# ============================================================
+# SAVE
+# ============================================================
+save
+
+# ============================================================
+# POST-SAVE CHECKLIST:
+#   [ ] Run motor test — verify correct spin directions
+#   [ ] Calibrate accelerometer (flat surface)
+#   [ ] Verify prop direction matches motor direction
+#   [ ] Test failsafe on bench (no props!)
+#   [ ] Enable bidirectional DSHOT in ESC firmware (BLHeli32)
+#   [ ] Set cell count or verify auto-detect in battery tab
+#   [ ] Check OSD layout in Configurator → OSD tab
+#   [ ] Maiden hover test — check for oscillations, tune PIDs
+# ============================================================
