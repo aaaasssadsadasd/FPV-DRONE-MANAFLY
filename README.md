@@ -57,3 +57,7 @@ The EV800D is an analog 5.8 GHz receiver, compatible with the SoloGood Caddx ANT
 
 <img width="1146" height="1072" alt="Screenshot 2026-04-11 173555" src="https://github.com/user-attachments/assets/fea75044-02c5-4c66-a430-a1b430953b85" />
 <img width="1326" height="844" alt="Screenshot 2026-04-11 172832" src="https://github.com/user-attachments/assets/2eba274c-6118-47fd-95e8-ed117be67207" />
+
+# wiring
+<img width="754" height="1076" alt="Screenshot 2026-04-11 213916" src="https://github.com/user-attachments/assets/8037b96d-fd24-4146-b0cf-0b967daa0537" />
+
