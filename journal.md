@@ -1,7 +1,6 @@
-
 # Journal #3
 
-changes to BOM
+changes to BOM, hopefully done for good.
 The speedybee f405 AIO was sold out in many places i searched including the official website. I only managed to find a link through a review blog. On Amazon and Ebay it was marked up to x2 the price. I wanted to find it near its original price of 50-60 and luckily I found it.
 
 https://oscarliang.com/speedybee-f405-aio-fc/#Where-to-Buy
@@ -29,3 +28,19 @@ The EV800D is an analog 5.8 GHz receiver, compatible with the SoloGood Caddx ANT
 
 <img width="1146" height="1072" alt="Screenshot 2026-04-11 173555" src="https://github.com/user-attachments/assets/fea75044-02c5-4c66-a430-a1b430953b85" />
 <img width="1326" height="844" alt="Screenshot 2026-04-11 172832" src="https://github.com/user-attachments/assets/2eba274c-6118-47fd-95e8-ed117be67207" />
+
+# Journal 2
+parts search
+Finished compiling a complete BOM, part search process was time consuming, I did my best to find the most affordable options. Current total for the drone build itself is around $180, goggles and controller will bring it up to near $300. Changes will be made, for lowering total cost and I am willing to pay out of pocket for the controller and propellors. I've gone and purchased propellors already. I will have a friend helping in on this project, it is the most ambitious project so far for the both of us. Wish us luck.
+
+# Journal 1
+Parts search
+Parts searching. looking for budget options, optimal find with the flight controller and battery.
+
+SpeedyBee F405 AIO 40A. $55
+
+4S 650mAh LiPo (XT30) $17
+
+more parts searching tomorrow...
+
+<img width="843" height="510" alt="image" src="https://github.com/user-attachments/assets/85f3b165-4aeb-461f-a06b-40e79220cee1" />
