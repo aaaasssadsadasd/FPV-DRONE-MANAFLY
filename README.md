@@ -23,7 +23,8 @@
 - **AliExpress:** 2 items
 - **Facebook Marketplace:** 1 item
 
-Journal #3
+# Journal #3
+
 changes to BOM
 The speedybee f405 AIO was sold out in many places i searched including the official website. I only managed to find a link through a review blog. On Amazon and Ebay it was marked up to x2 the price. I wanted to find it near its original price of 50-60 and luckily I found it.
 
