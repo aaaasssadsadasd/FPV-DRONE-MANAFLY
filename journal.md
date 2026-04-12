@@ -1,3 +1,18 @@
+# Journal #4
+CAD
+The stl file for the drone chassis was upscaled by x10 when first imported. It took a while to figure out how to rescale it. After joining a call with the designer of the model, we resolved the issue. Added components such as camera, motors, battery, a 25 x 25mm square represents the flight controller in place.
+
+<img width="1127" height="779" alt="Screenshot 2026-04-12 040009" src="https://github.com/user-attachments/assets/5eb7c83d-c5bf-48c9-a09b-9fdfb5c1766f" />
+
+
+Original step file:
+
+<img width="1011" height="635" alt="Screenshot 2026-04-12 040514" src="https://github.com/user-attachments/assets/6dfe9b5e-3cb6-476e-8c61-1b3dcfff9081" />
+
+
+LENGTH: 135 MM WIDTH: 135 MM
+
+
 # Journal #3
 
 changes to BOM, hopefully done for good.
