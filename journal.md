@@ -1,3 +1,28 @@
+# Journal #5 test print, goggles acquired, changed FC
+Ran a test print with standard pla filament instead of the petg. Don't have that on hand yet but soon will. The test came out great, better than I expected. There were more supports than actual drone frame. Satisfied with current print, took around 4 hours. Will be using this as the guinea pig for wiring and component placements while getting hands on petg filament.
+
+<img width="3024" height="4032" alt="unnamed" src="https://github.com/user-attachments/assets/ae5cb823-6778-46fa-a20f-6b19e4d1c9b1" />
+
+I purchased a pair of knock-off ev 800d goggles because I felt the need to commit to this project and not rely on hack club funding. It came out to a total of $60, not bad.
+<img width="4032" height="3024" alt="IMG_6873" src="https://github.com/user-attachments/assets/3dfecab4-9890-42b2-977b-21fccd345747" />
+<img width="3024" height="4032" alt="IMG_6874" src="https://github.com/user-attachments/assets/f7089dea-f260-4c73-beaf-aa2fe8681c4f" />
+
+
+
+However, since it was a cheap knockoff, it requires an external power source. This means I'll have to strap a battery to it or drag it around connected from a wire.
+
+Also, the speedybee f405 AIO was so popular it went up by $30 on aliexpress. Every listing of it was $80-$100, so I found an alternative:
+
+SpeedyBee F405 BLS V2 Mini BLS ESC Stack – 20x20
+
+
+<img width="1071" height="875" alt="Screenshot 2026-04-16 223403" src="https://github.com/user-attachments/assets/a3475215-beec-452f-a574-1dbd4d4f26a1" />
+
+Usually, this would be around $14 more expensive than the f405 AIO but aliexpress is probably having a special event right now. It is the cheapest compatible flight controller I've seen and the only downside is slightly worse cooling and a bit more space occupied. This should be fine as the drone frame seats 20x20 and 25x25 flight controllers. I hope the price doesn't raise again while awaiting approval...
+
+This entry covers the past 4 days as I couldn't write while the project was waiting for approval.
+
+
 # Journal #4
 CAD
 The stl file for the drone chassis was upscaled by x10 when first imported. It took a while to figure out how to rescale it. After joining a call with the designer of the model, we resolved the issue. Added components such as camera, motors, battery, a 25 x 25mm square represents the flight controller in place.
