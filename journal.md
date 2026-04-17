@@ -14,7 +14,7 @@ SpeedyBee F405 BLS V2 Mini BLS ESC Stack – 20x20
 
 <img width="1071" height="875" alt="Screenshot 2026-04-16 223403" src="https://github.com/user-attachments/assets/a3475215-beec-452f-a574-1dbd4d4f26a1" />
 
-Usually, this would be around $14 more expensive than the f405 AIO but aliexpress is probably having a special event right now. It is the cheapest compatible flight controller I've seen and the only downside is slightly worse cooling and a bit more space occupied. This should be fine as the drone frame seats 20x20 and 25x25 flight controllers. I hope the price doesn't raise again while awaiting approval...
+Usually, this would be around $14 more expensive than the f405 AIO but aliexpress is probably having a special event right now. It is the cheapest compatible flight controller I've seen and the only downside is slightly worse cooling and a bit more space occupied. This should be fine as the drone frame seats 20x20 and 25x25 flight controllers. I hope the price doesn't raise again.
 
 This entry covers the past 4 days as I couldn't write while the project was waiting for approval.
 
