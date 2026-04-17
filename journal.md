@@ -6,7 +6,8 @@ Ran a test print with standard pla filament instead of the petg. Don't have that
 I purchased a pair of knock-off ev 800d goggles because I felt the need to commit to this project and not rely on hack club funding. It came out to a total of $60, not bad.
 However, since it was a cheap knockoff, it requires an external power source. This means I'll have to strap a battery to it or drag it around connected from a wire.
 <img width="4032" height="3024" alt="IMG_6873" src="https://github.com/user-attachments/assets/3dfecab4-9890-42b2-977b-21fccd345747" />
-<img width="3024" height="4032" alt="IMG_6874" src="https://github.com/user-attachments/assets/f7089dea-f260-4c73-beaf-aa2fe8681c4f" />
+<img width="3024" height="2479" alt="IMG_6874" src="https://github.com/user-attachments/assets/6a077c70-10e0-4b4c-8d00-787a0411c602" />
+
 
 Also, the speedybee f405 AIO was so popular it went up by $30 on aliexpress. Every listing of it was $80-$100, so I found an alternative:
 SpeedyBee F405 BLS V2 Mini BLS ESC Stack – 20x20
