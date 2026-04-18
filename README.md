@@ -2,7 +2,7 @@
 3" drone project based on 3d printed design by manafish on makerworld. Modern drone frames are usually always made from carbon fiber, it is light and durable. Using ai generative design, this drone frame is optimized for weight and strength. Each frame costs around $1 in PETG or ABS filament. This is what inspired my project, an extremely cost effective 3d print with the potential to compete with $30 carbon fiber frames. I wanted to build this project because I was looking for experience with fpv drones and a challenge.
 Frame:
 <img width="789" height="690" alt="Screenshot 2026-04-11 162020" src="https://github.com/user-attachments/assets/d8799b87-02b3-4b97-a9c9-50224d09d091" />
-With components: https://a360.co/4euwI9u (view in fusion360 browser, file was too big for github)
+With components: https://a360.co/4euwI9u (view in fusion360 browser, step file was too big for github)
 <img width="1138" height="845" alt="Screenshot 2026-04-17 211526" src="https://github.com/user-attachments/assets/37985209-0e58-4556-8379-b2cf978294ce" />
 
 # BOM
