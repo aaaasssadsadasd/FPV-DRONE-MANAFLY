@@ -1,3 +1,43 @@
+# Journal #6 component assembly in cad + wiring diagrams
+
+Inserted all components into the frame on fusion360
+<img width="1138" height="845" alt="image" src="https://github.com/user-attachments/assets/32c547d1-a757-4edb-b91b-c00c836c848e" />
+
+
+Camera mounts
+<img width="674" height="416" alt="image" src="https://github.com/user-attachments/assets/88f31980-c7be-4a16-9724-faab20aa82e9" />
+
+
+I spent a while on this, The imported stl file was scaled to around x10 the size, scaling down was a messy, convoluted process. This method is innacurate but the final print will be properly done with correct scaling.
+<img width="1500" height="1252" alt="image" src="https://github.com/user-attachments/assets/5818b04e-8d72-4378-9df8-e181f6d50d7c" />
+
+The camera is 14mm, with case it becomes 19mm, it looks like it should fit right.
+
+process was smooth and quick after taking a break from the project. Included components:
+
+Speedybee F405 BLS 35A mini + esc stack (undecided whether or not I want to use this or the F405 All-in-one) A standard 1404 brushless motor model from grabcad Ascent lite vtx camera/vtx with antenna gemfan 3035 propellors Generic lipo battery from grabcad
+
+Wiring diagrams:
+
+Speedybee F405
+<img width="941" height="785" alt="image" src="https://github.com/user-attachments/assets/3e4aa087-0fd2-4681-81ba-69e91c1cf183" />
+
+
+HGLRC Zeus350mW VTX
+<img width="615" height="287" alt="image" src="https://github.com/user-attachments/assets/01d0f772-8a57-4b90-95ad-d615b36df3af" />
+
+
+Radiomaster ELRS Receiver RP1
+<img width="500" height="222" alt="image" src="https://github.com/user-attachments/assets/563de2f5-7634-4c3c-8ad4-4779f4ca861a" />
+
+
+CADDX FPV camera
+<img width="1065" height="802" alt="image" src="https://github.com/user-attachments/assets/1b44938a-75e7-43b7-84b2-5873f94b2d9d" />
+
+
+
+I spent some time today researching the interworkings of flight controllers brush vs brushless motors, I learned about the gyroscope that measure the orientation and accelerometer that measures the acceleration. I studied how a brushless motor works. magnets surround the outside, coils are stationary in the center. Three wires for three sets of coils. sets of coils are usually in fours, magnetism is given and taken systematically. When a coil is powered, it acts as a magnet, polarity is determined by the direction of electricity flow. Power going inwards; North side inwards, power going outwards; North side outwards. Two sets of coils are powered at a time. Every time two sets of coils are powered, the other set gets it's energy removed, which takes away its magnetic property. This rotates the motor slightly, this action is repeated rapidly to create spin. The electronic speed controller's purpose is to regulate the speed of a motor by varying the switching rate. Brushless motors are better by removing the friction of the brush, more energy can be directed to powering the motor. It also is more reliable, motors with metal brushes can be damaged easier.
+
 # Journal #5 test print, goggles acquired, changed FC
 Ran a test print with standard pla filament instead of the petg. Don't have that on hand yet but soon will. The test came out great, better than I expected. There were more supports than actual drone frame. Satisfied with current print, took around 4 hours. Will be using this as the guinea pig for wiring and component placements while getting hands on petg filament.
 
@@ -19,8 +59,7 @@ Usually, this would be around $14 more expensive than the f405 AIO but aliexpres
 This entry covers the past 4 days as I couldn't write while the project was waiting for approval.
 
 
-# Journal #4
-CAD
+# Journal #4 CAD
 The stl file for the drone chassis was upscaled by x10 when first imported. It took a while to figure out how to rescale it. After joining a call with the designer of the model, we resolved the issue. Added components such as camera, motors, battery, a 25 x 25mm square represents the flight controller in place.
 
 <img width="1127" height="779" alt="Screenshot 2026-04-12 040009" src="https://github.com/user-attachments/assets/5eb7c83d-c5bf-48c9-a09b-9fdfb5c1766f" />
@@ -34,7 +73,7 @@ Original step file:
 LENGTH: 135 MM WIDTH: 135 MM
 
 
-# Journal #3
+# Journal #3 changes to BOM (outdated)
 
 changes to BOM, hopefully done for good.
 The speedybee f405 AIO was sold out in many places i searched including the official website. I only managed to find a link through a review blog. On Amazon and Ebay it was marked up to x2 the price. I wanted to find it near its original price of 50-60 and luckily I found it.
@@ -65,12 +104,12 @@ The EV800D is an analog 5.8 GHz receiver, compatible with the SoloGood Caddx ANT
 <img width="1146" height="1072" alt="Screenshot 2026-04-11 173555" src="https://github.com/user-attachments/assets/fea75044-02c5-4c66-a430-a1b430953b85" />
 <img width="1326" height="844" alt="Screenshot 2026-04-11 172832" src="https://github.com/user-attachments/assets/2eba274c-6118-47fd-95e8-ed117be67207" />
 
-# Journal 2
-parts search
-Finished compiling a complete BOM, part search process was time consuming, I did my best to find the most affordable options. Current total for the drone build itself is around $180, goggles and controller will bring it up to near $300. Changes will be made, for lowering total cost and I am willing to pay out of pocket for the controller and propellors. I've gone and purchased propellors already. I will have a friend helping in on this project, it is the most ambitious project so far for the both of us. Wish us luck.
+# Journal 2 parts search
+
+Finished compiling a complete BOM, part search process was time consuming, I did my best to find the most affordable options. Current total for the drone build itself is around $180, goggles and controller will bring it up to near $300. Changes will be made, for lowering total cost and I am willing to pay out of pocket for the controller and propellors. I've gone and purchased propellors already. most ambitious project so far
 
 # Journal 1
-Parts search
+
 Parts searching. looking for budget options, optimal find with the flight controller and battery.
 
 SpeedyBee F405 AIO 40A. $55
